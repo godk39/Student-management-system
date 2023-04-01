@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Chang Profile</title>
+        <link rel="icon" type="image/png" href="/img/fit.png" sizes="45x45"/>
+        <link rel="stylesheet" href="/css/teacher.css">
+        <link href="https://cdn.datatables.net/1.10.20/css/dataTables.bootstrap4.min.css" rel="stylesheet" crossorigin="anonymous" />
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+  
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    </head>
+    <body>
+        <input type = "checkbox" id = "check">
+        <label for="check">
+          <i class = "fas fa-bars" id = "btn"></i>
+          <i class = "fas fa-times" id = "cancel"></i>
+  
+        </label>
+          <div class="sidebar">
+              <header>
+                  <a href = "#"> FIT </a>
+              </header>
+              <ul class = "vertical">
+                  <li><a href="home.html"><i class="fas fa-qrcode"></i> Dashboard</a></li>
+                  <li><a href="course.html"><i class="fas fa-calendar-week"></i> Courses</a></li>
+                  <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                  <li>
+                      <a href="#" id = "menu_ver"><i class="fas fa-edit"></i> Update</a>
+                      <ul>
+                          <li><a href="update.html">Update mark</a></li>
+                          <li><a href="update.html">Update attendance</a></li>
+                      </ul>
+                  </li>
+  
+              </ul>
+          </div>
+  
+  
+        <section>     
+            <div class = "header">
+                <img class = "logo" src="css/logo.png" alt="This is logo">
+                <nav >
+                    <ul><li id = "name"><a href = "home.html"><i class="fas fa-home"></i> Home</a></li></ul>
+                    <ul class="nav_link">
+                          
+                        <li><a href = "#"><i class="fas fa-comments"></i></a> </li>
+                        <li><a href = "#"><i class="fas fa-bell"></i></a> </li>
+                    </ul>
+                </nav>
+      
+                <nav class = "dropdown_menu">
+                <button>Hi, teacher</body> <i class="fas fa-caret-down"></i> </button>
+                    <ul>
+                        <li><a href="#">Switch theme</a></li>
+                        <li>    <a href="change_profile.html">Change profile</a></li>
+                        <li><a href="#">Log out</a></li>                    
+                    </ul>
+                </nav>
+              </div>  
+
+              <div id = "phuong">
+                <div class="title">
+                    <img src="./images/fit_logo_2.png" height="100" width="100">
+                      <h1>Edit Profile</h1>
+                  </div>
+                    <div class="container">
+                          <hr>
+                        <div class="row">
+                          <!-- left column -->
+                          <div class="col-md-3">
+                            <div class="text-center">
+                              <img src="//placehold.it/100" class="avatar img-circle" alt="avatar">
+                              <h6>Upload a different photo...</h6>
+                              
+                              <input type="file" class="form-control">
+                            </div>
+                            <br>
+                          </div>
+                          
+                          <!-- edit form column -->
+                          <div class="col-md-9 personal-info">
+                            <div class="alert alert-info alert-dismissable">
+                              <a class="panel-close close" data-dismiss="alert">×</a> 
+                              <i class="fa fa-coffee"></i>
+                              This is an <strong>.alert</strong>. Use this to show important messages to the user.
+                            </div>
+                            <h3>Personal info</h3>
+                            
+                            <form class="form-horizontal" role="form">
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">First name:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" value="">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">Last name:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" value="">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">Company:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" value="">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">Email:</label>
+                                <div class="col-lg-8">
+                                  <input class="form-control" type="text" value="">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-lg-3 control-label">Time Zone:</label>
+                                <div class="col-lg-8">
+                                  <div class="ui-select">
+                                    <select id="user_time_zone" class="form-control">
+                                      <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                                      <option value="Alaska">(GMT-09:00) Alaska</option>
+                                      <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                                      <option value="Vietnam">(GMT-07:00) Vietnam</option>
+                                      <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                                      <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                                      <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                                      <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-md-3 control-label">Username:</label>
+                                <div class="col-md-8">
+                                  <input class="form-control" type="text" value="">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-md-3 control-label">Password:</label>
+                                <div class="col-md-8">
+                                  <input class="form-control" type="password" value="">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-md-3 control-label">Confirm password:</label>
+                                <div class="col-md-8">
+                                  <input class="form-control" type="password" value="">
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label class="col-md-3 control-label"></label>
+                                <div class="col-md-8">
+                                  <input type="button" class="btn btn-info" value="Save Changes">
+                                  <span></span>
+                                  <input type="reset" class="btn btn-default" value="Cancel">
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                      </div>
+                    </div>
+                    <hr>
+              </div>
+
+    
+        </section> 
+    </body>
+</html>

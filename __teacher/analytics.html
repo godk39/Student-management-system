@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <title>Analytics</title>
+        <link rel="icon" type="image/png" href="/img/fit.png" sizes="45x45"/>
+        <link rel="stylesheet" href="/css/teacher.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+      <input type = "checkbox" id = "check">
+      <label for="check">
+        <i class = "fas fa-bars" id = "btn"></i>
+        <i class = "fas fa-times" id = "cancel"></i>
+
+      </label>
+        <div class="sidebar">
+            <header>
+                <a href = "#"> FIT </a>
+            </header>
+            <ul class = "vertical">
+                <li><a href="home.html"><i class="fas fa-qrcode"></i> Dashboard</a></li>
+                <li><a href="course.html"><i class="fas fa-calendar-week"></i> Courses</a></li>
+                <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+                <li>
+                    <a href="#" id = "menu_ver"><i class="fas fa-edit"></i> Update</a>
+                    <ul>
+                        <li><a href="update.html">Update mark</a></li>
+                        <li><a href="update.html">Update attendance</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+
+
+        <section id = "analytics">     
+            <div class = "header">
+                <img class = "logo" src="#" alt="This is logo">
+                <nav >
+                    <ul><li id = "name"><a href = "home.html"> "><i class="fas fa-home"></i> Home</a></li></ul>
+                    <ul class="nav_link">
+                        
+                        <li><a href = "#"><i class="fas fa-comments"></i></a> </li>
+                        <li><a href = "#"><i class="fas fa-bell"></i></a> </li>
+                    </ul>
+                </nav>
+    
+                <nav class = "dropdown_menu">
+                <button>Hi, teacher</body> <i class="fas fa-caret-down"></i> </button>
+                <ul>
+                    <li><a href="#">Switch theme</a></li>
+                    <li><a href="change_profile.html">Change profile</a></li>
+                    <li><a href="#">Log out</a></li>                    
+                </ul>
+                </nav>
+            </div>  
+            
+            
+
+
+
+            <h1>Charts, Charts, Charts</h1>
+            <div class="container">
+
+                <!--********************************************************-->
+                <div class="row">
+                    <div class="col-6 chart">
+                        <canvas id="myChart1" width="500" height="400"></canvas>
+                    </div>
+                </div>
+
+                <!--********************************************************-->
+                <div class="row">
+                    
+                        <canvas id="myChart2" width="500" height="400"></canvas>
+                    
+                    
+                        <canvas id="myChart3" width="500" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+   
+            
+            
+
+
+
+        </section>
+        <script src="chart.js"></script>
+
+    </body>
+    
+</html>
