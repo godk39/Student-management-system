@@ -1,0 +1,2 @@
+theo như t tham khảo được thì mình làm password như thế này là chưa tối ưu về mặt bảo mật abcxyz,.... tuy nhiên nó sẽ rất nhanh khi truy xuất
+có vài entity t viết khác so với bản thiết kế, nhưng nội đại khái vẫn giống nhau nên nếu giảng viên có hỏi thì kêu là y sì cái design.
